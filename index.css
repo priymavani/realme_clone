@@ -1,25 +1,35 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: gray;
+    background-color:white;
 }
 nav{
+   
+    width: 100vw;
+    background-color: black;
+    color: white;
+    
+    
+
+}
+.backgc{
     width: 100vw;
     display: flex;
     direction: row;
-    background-color: black;
-    color: white;
     justify-content: space-evenly;
+    align-items: center;
     position: fixed;
-    
-    
+    background-color: black;
 
 }
-
 .long_menu{
+    
+    /* background-color: black; */
     width: 700px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
     
@@ -44,6 +54,7 @@ nav{
     width: 400px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 15px;
 }
 #search{
@@ -71,6 +82,7 @@ nav{
 /* content */
 .image1{
     /* position: static; */
+    margin-top: .7%;
     position: static; 
     display: inline-block;
     color: white;   
@@ -143,3 +155,133 @@ a{
     top: 230%; 
     left: 10%;  
 }
+#h_img3{
+    max-width: 100%;
+    max-height: 100%;
+}
+ .heading3{
+    /* background-color: red; */
+    width: 450px;
+    
+ }
+ .part1{
+    margin-top: .5%;
+    padding: 0px;
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+ }
+ .part{
+    margin-top: .8%;
+    padding: 0px;
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+ }
+ .box1{
+    /* position: relative; */
+    width: 50vw;
+    margin-right: 10px;
+    background-image: url(image/1729756200136e04b403248894af88d3c2a2492c83143.png);
+    background-size: cover; 
+    background-position: center; 
+    overflow: hidden; 
+    transition: background-size .2s ease;
+ }
+ .box2{
+    /* position: relative; */
+    width: 50vw;
+    margin-left: 2px;
+    background-image: url(image/17240368720958c318fce8c8e4e17be456962a0791398.png);
+    background-size: cover; 
+    background-position: center; 
+    overflow: hidden; 
+    transition: background-size 0.5s ease-in;
+}
+.box3{
+    /* position: relative; */
+    width: 50vw;
+    margin-right: 10px;
+    background-image: url(image/1723795210621a14e51eb036646a5a2dd4374118eed8e.png);
+    background-size: cover; 
+    background-position: center; 
+    overflow: hidden; 
+    transition: background-size .2s ease;
+ }
+ .box4{
+    /* position: relative; */
+    width: 50vw;
+    margin-left: 2px;
+    background-image: url(image/1732680382032689a185c1c654be68ef7ea739b4b729f.png);
+    background-size: cover; 
+    background-position: center; 
+    overflow: hidden; 
+    transition: background-size .2s ease;
+ }
+ .box5{
+    /* position: relative; */
+    color: white;
+    width: 50vw;
+    margin-right: 10px;
+    background-image: url(image/17237952217290cfd29a8486c4a519e875f1729d3cd6d.png);
+    background-size: cover; 
+    background-position: center; 
+    overflow: hidden; 
+    transition: background-size 0.5s ease-in;
+}
+
+ .box6{
+    /* position: relative; */
+    color: white;
+    width: 50vw;
+    margin-left: 2px;
+    background-image: url(image/1723795231448dd956cc34ea24fc1985a0bff479b5340.png);
+    background-size: cover; 
+    background-position: center; 
+    overflow: hidden; 
+    transition: background-size 0.5s ease-in;
+}
+.box1:hover , .box2:hover ,.box3:hover , .box4:hover,.box5:hover , .box6:hover {
+    background-size: 200%; 
+   
+    transition: 2s ease;
+}
+.heading_oi{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5%;
+}
+.details_oi{
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+
+
+
+/* services */
+.service{
+    margin-top: 10%;
+    width: 100vw;
+    height: 30px;
+    margin-bottom: 5%;
+}
+.box{
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    /* background-color:#F9F9F9 ; */
+}
+
+
+ 
