@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Sign in</title>
+    <style>
+        body{
+            background-color:#E9F1FB ;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .box{
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            padding: 5%;
+            width: 25vw;
+            height: 60vh;
+           
+           margin: 5% 30% 5% 30%;
+        }
+        #display1{
+            color: blue;
+        }
+        #display2{
+            color: green;
+        }
+
+        #display3{
+            color: orangered;
+        }
+        #display{
+            color: red;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>SIGN UP </h1>
+
+        <lable>Enter Your Name</lable><br>
+        <input type="text" id="username" placeholder="NAME"><br><br>
+
+        <lable>Enter Email</lable><br>
+        <input type="email" id="email" placeholder="EMAIL"><br><br>
+
+        <label for="">Create Password</label><br>
+        <input type="password" id="password" placeholder="create password"><br><br>
+
+
+        <button id="save">Submit </button>
+        <button id="load">Load userdata</button>
+
+        <p id="display"></p>
+        <p id="display1"></p>
+        <p id="display2"></p>
+        <p id="display3"></p>
+        
+    </div>
+
+        <script>
+            let save_name = document.getElementById('save');
+
+            save_name.addEventListener('click',()=>{
+                let name = document.getElementById('username').value;
+                let email = document.getElementById('email').value;
+                let password = document.getElementById('password').value;
+
+                localStorage.setItem('username', name);
+                localStorage.setItem('useremail', email);
+                localStorage.setItem('userpassword', password);
+                alert('userdata saved');
+            });
+             
+            // let save_email = document.getElementById('email');
+            // save_email.addEventListener('clicl',()=>{
+            //     let email = document.getElementById('email')
+            // })
+
+
+            let display = document.getElementById('load');
+            display.addEventListener('click',()=>{
+                let savedname = localStorage.getItem('username');
+                let savedemail = localStorage.getItem('useremail');
+                let savedpassword = localStorage.getItem('userpassword');
+
+                if(savedname && savedpassword && savedemail){
+                    document.getElementById('display1').textContent = `saved NAME: ${savedname} `;
+                    document.getElementById('display2').textContent =` saved EMAIL : ${savedemail} `;
+                    document.getElementById('display3').textContent =` saved PASSWORD: ${savedpassword}`;
+                }else{
+                    document.getElementById('display').textContent = 'No userdata found.';
+                }
+            });
+        </script>
+    
+</body>
+</html>

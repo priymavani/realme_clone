@@ -308,4 +308,15 @@ a{
     font-size: 15px;
     color: #666666;
 }
- 
+
+/* footer  */
+.footer{
+    background-color: black;
+} 
+.main{
+    display: flex;
+    
+}
+
+
+
